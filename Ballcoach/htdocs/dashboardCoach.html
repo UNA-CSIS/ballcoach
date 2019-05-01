@@ -1,0 +1,692 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>BallCoach</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      <link rel="stylesheet" href="css/style.css">
+      <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+      <script src="https://use.typekit.net/ihn4ruw.js"></script>
+      <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+
+    <div id="page" class="site">
+
+      <header id="masthead" class="site-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+
+              <a href="/" class="logo"><img width="62" height="82" src="images/logo-small.png" alt="BallCoach" /></a>
+
+              <nav id="app-navigation" class="app-navigation">
+                <button class="menu-toggle" aria-controls="app-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
+                <ul class="app-menu menu" aria-expanded="false">
+                  <li class="schedule current"><a href="coachProfile.php">Profile</a></li>
+                  <li class="user"><a href="coach-edit-profile.html"><span class="user-profile-image"><img class="profile-image profile-image-xsm" src="/images/fake/stock-coach-2.jpg" /></span> kevinhall</a>
+                      <ul>
+                          <li class="profile"><a href="coach-edit-profile.html">Profile</a></li>
+                          <li class="account"><a href="coach-account.html">Account</a></li>
+                          <li class="log-out"><a href="#">Log Out</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </nav>
+
+            </div>
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </header>
+
+      <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+          <main id="main" class="site-main">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+
+                  <div class="full-width">
+                    <ul class="tabs">
+                      <li class="current"><a href="coach-calendar.html">Calendar View</a></li>
+                      <li><a href="coach-calendar-list.html">List View</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="cal-toolbar">
+                    <a class="cal-prev-month-link" href="#"></a>
+                    <h2 class="cal-current-month">July</h2>
+                    <a class="cal-next-month-link" href="#"></a>
+                  </div>
+
+                      <table class="cal-grid">
+                        <tr class="cal-row cal-header-row">
+                          <td class="cal-header">Sun</td>
+                          <td class="cal-header">Mon</td>
+                          <td class="cal-header">Tue</td>
+                          <td class="cal-header">Wed</td>
+                          <td class="cal-header">Thu</td>
+                          <td class="cal-header">Fri</td>
+                          <td class="cal-header">Sat</td>
+                        </tr>
+                        <tr class="cal-row cal-day-row">
+                            <td class="cal-day cal-day-past cal-prev-month-day">
+                              <div class="cal-date">25</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past cal-prev-month-day">
+                              <div class="cal-date">26</div>
+                              <div class="cal-content">
+                                <div class="cal-event booked">1p</div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past cal-prev-month-day">
+                              <div class="cal-date">27</div>
+                              <div class="cal-content">
+                                <div class="cal-event booked">3p</div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past cal-prev-month-day">
+                              <div class="cal-date">28</div>
+                              <div class="cal-content">
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past cal-prev-month-day">
+                              <div class="cal-date">29</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past cal-prev-month-day">
+                              <div class="cal-date">30</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </div>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">1</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                        </tr><!-- .cal-row -->
+                        <tr class="cal-row cal-day-row">
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">2</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">3</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">4</div>
+                              <div class="cal-content">
+                                <div class="cal-event booked">1p</div>
+                                <div class="cal-event booked">3p</div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">5</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">6</div>
+                              <div class="cal-content">
+                                <div class="cal-content"></div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">7</div>
+                              <div class="cal-content">
+                                <div class="cal-content"></div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </div>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">8</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                        </tr><!-- .cal-row -->
+                        <tr class="cal-row cal-day-row">
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">9</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">10</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">11</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </div>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">12</div>
+                              <div class="cal-content">
+                                  <div class="cal-event booked"><span class="notes"></span></div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">13</div>
+                              <div class="cal-content">
+                                <div class="cal-content"></div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">14</div>
+                              <div class="cal-content">
+                                <div class="cal-content">
+                                  <div class="cal-event booked"><span class="notes"></span>1p</div>
+                                </div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">15</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </div>
+                        </tr><!-- .cal-row -->
+                        <tr class="cal-row cal-day-row">
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">16</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">17</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">18</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-past">
+                              <div class="cal-date">19</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">20</div>
+                              <div class="cal-content">
+                                <div class="cal-content"></div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">21</div>
+                              <div class="cal-content">
+                                <div class="cal-content">
+                                  <div class="cal-event">10a</div>
+                                  <div class="cal-event">1p</div>
+                                </div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">22</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </div>
+                        </tr><!-- .cal-row -->
+                        <tr class="cal-row cal-day-row">
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">23</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">24</div>
+                              <div class="cal-content">
+                                <div class="cal-event">10a</div>
+                                <div class="cal-event">1p</div>
+                                <div class="cal-event booked"><span class="notes"></span>3p</div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">25</div>
+                              <div class="cal-content">
+                                <div class="cal-event">10a</div>
+                                <div class="cal-event">1p</div>
+                                <div class="cal-event">3p</div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">26</div>
+                              <div class="cal-content">
+                                <div class="cal-event">10a</div>
+                                <div class="cal-event">1p</div>
+                                <div class="cal-event">3p</div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">27</div>
+                              <div class="cal-content">
+                                <div class="cal-content">
+                                  <div class="cal-event booked">10a</div>
+                                  <div class="cal-event">1p</div>
+                                  <div class="cal-event">3p</div>
+                                </div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">28</div>
+                              <div class="cal-content">
+                                <div class="cal-content">
+                                  <div class="cal-event">10a</div>
+                                  <div class="cal-event">1p</div>
+                                </div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">29</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                        </tr><!-- .cal-row -->
+                        <tr class="cal-row cal-day-row">
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">30</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future">
+                              <div class="cal-date">31</div>
+                              <div class="cal-content">
+                                <div class="cal-event">10a</div>
+                                <div class="cal-event">1p</div>
+                                <div class="cal-event booked">3p</div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future cal-next-month-day">
+                              <div class="cal-date">1</div>
+                              <div class="cal-content">
+                                <div class="cal-event">10a</div>
+                                <div class="cal-event">1p</div>
+                                <div class="cal-event">3p</div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future cal-next-month-day">
+                              <div class="cal-date">2</div>
+                              <div class="cal-content">
+                                <div class="cal-event">10a</div>
+                                <div class="cal-event">1p</div>
+                                <div class="cal-event">3p</div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future cal-next-month-day">
+                              <div class="cal-date">3</div>
+                              <div class="cal-content">
+                                <div class="cal-content">
+                                  <div class="cal-event booked">10a</div>
+                                  <div class="cal-event">1p</div>
+                                  <div class="cal-event">3p</div>
+                                </div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future cal-next-month-day">
+                              <div class="cal-date">4</div>
+                              <div class="cal-content">
+                                <div class="cal-content">
+                                  <div class="cal-event">10a</div>
+                                  <div class="cal-event">1p</div>
+                                </div>
+                              </div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                            <td class="cal-day cal-day-future cal-next-month-day">
+                              <div class="cal-date">5</div>
+                              <div class="cal-content"></div>
+                              <div class="cal-add-event"></div>
+                            </td>
+                        </tr><!-- .cal-row -->
+
+                      </table>
+
+
+
+
+
+
+
+                </div>
+              </div><!-- .row -->
+            </div><!-- .container -->
+
+          </main><!-- #main -->
+        </div><!-- #primary -->
+      </div><!-- #content -->
+
+      <footer id="colophon" class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <a href="/" class="logo"><img width="62" height="82" src="images/logo-small.png" alt="BallCoach" /></a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <nav class="footer-navigation">
+                <ul class="footer-menu menu">
+                  <li class="hide-on-mobile"><a href="#">How it Works</a></li>
+                  <li class="hide-on-mobile"><a href="#">Have a Question?</a></li>
+                  <li class="hide-on-mobile"><a href="#">Find a Coach</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <nav class="footer-navigation">
+                <ul class="footer-menu menu">
+                  <li><a href="#">Contact Us</a></li>
+                  <li class="hide-on-mobile"><a href="#">Log In</a></li>
+                  <li class="hide-on-mobile"><a href="#">Sign Up</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class=" col-sm-6 col-md-3">
+              <nav class="footer-navigation">
+                <ul class="footer-menu menu">
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </nav>
+            </div>
+
+          </div><!-- .row -->
+
+          <ul class="menu social-menu">
+             <li><a class="facebook" href="https://www.facebook.com/BallCoachLLC"><i class="fa fa-facebook"></i> <span>Facebook</span></a></li>
+             <li><a class="twitter" href="https://twitter.com/ballcoachllc"><i class="fa fa-twitter"></i> <span>Twitter</span></a></li>
+             <li><a class="instagram" href="https://www.instagram.com/ballcoachllc/"><i class="fa fa-instagram"></i> <span>Instagram</span></a></li>
+             <li><a class="google-plus" href="https://plus.google.com/113025630867394888896"> <i class="fa fa-google-plus"></i> <span>Google+</span></a></li>
+             <li><a class="youtube" href="https://www.youtube.com/channel/UCkimU4KkFkeRukWdiM6FPvg"> <i class="fa fa-youtube-play"></i> <span>YouTube</span></a></li>
+          </ul>
+
+          <div class="site-info">
+              <p class="centered">&copy; 2017 BallCoach, LLC. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+          </div>
+
+        </div><!-- .container -->
+      </footer>
+
+    </div><!-- #page -->
+
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+
+          <div class="event-modal">
+            <a class="close-modal" href="#"></a>
+
+            <div id="tabs">
+              <ul class="tabs">
+                <li><a href="#details">Details</a></li>
+                <li><a href="#notes">Notes</a></li>
+              </ul>
+              <div class="panel-content">
+
+                <div id="details">
+                  <form>
+                    <div class="row">
+                      <div class="col-4">
+                        <label>Date</label>
+                      </div>
+                      <div class="col-8">
+                        May 20, 2017
+                      </div>
+                    </div><!-- .row -->
+
+                    <div class="row">
+                      <div class="col-4">
+                        <label>Time</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="text" name="time" value="9:00am" />
+                      </div>
+                    </div><!-- .row -->
+
+                    <div class="row">
+                      <div class="col-4">
+                        <label>Sport</label>
+                      </div>
+                      <div class="col-8">
+                        <a href="#" class="edit-field"></a>
+                        <div><input type="checkbox" name="sport[]" value="Baseball" checked="checked" /> Baseball</div>
+                      </div>
+                    </div><!-- .row -->
+
+                    <div class="row">
+                      <div class="col-4">
+                        <label>Training Type</label>
+                      </div>
+                      <div class="col-8">
+                        <a href="#" class="edit-field"></a>
+                        <div><input type="checkbox" name="training-type[]" value="Hitting" checked="checked" /> Hitting</div>
+                        <div><input type="checkbox" name="training-type[]" value="Pitching" checked="checked" /> Pitching</div>
+                        <div><input type="checkbox" name="training-type[]" value="Fielding" /> Fielding</div>
+                      </div>
+                    </div><!-- .row -->
+
+                    <!--<div class="row">
+                      <div class="col-4">
+                        <label>Training Type</label>
+                      </div>
+                      <div class="col-8">
+                        <a href="#" class="edit-field-done">Done</a>
+                        <div class="checkbox-row">Hitting <a href="#" class="delete-this"></a></div>
+                        <div class="checkbox-row">Pitching <a href="#" class="delete-this"></a></div>
+                        <div class="checkbox-row">Fielding <a href="#" class="delete-this"></a></div>
+                        <div class="checkbox-row"><input type="text" class="add-field" name="training-type[]" /> <a href="#" class="add-this-field"></a></div>
+                      </div>
+                    </div>--><!-- .row -->
+
+                    <div class="row">
+                      <div class="col-4">
+                        <label>Venue</label>
+                      </div>
+                      <div class="col-8">
+                        <a href="#" class="edit-field"></a>
+                        <div class="checkbox-row">
+                          <div class="checkbox-wrap">
+                            <input class="checkbox" type="checkbox" name="venue[]" value="Name of Location" checked="checked" />
+                          </div>
+                          <div class="checkbox-label">
+                            Name of Location<br />
+                            <span class="small">
+                              123 Address St.<br />
+                              City, ST 55555
+                            <span>
+                          </div>
+                        </div><!-- .checkbox-row -->
+                        <div class="checkbox-row">
+                          <div class="checkbox-wrap">
+                            <input class="checkbox" type="checkbox" name="venue[]" value="Name of Location" checked="checked" />
+                          </div>
+                          <div class="checkbox-label">
+                            Name of Location<br />
+                            <span class="small">
+                              123 Address St.<br />
+                              City, ST 55555
+                            <span>
+                          </div>
+                        </div><!-- .checkbox-row -->
+                        <div class="checkbox-row">
+                          <div class="checkbox-wrap">
+                            <input class="checkbox" type="checkbox" name="venue[]" value="Name of Location" />
+                          </div>
+                          <div class="checkbox-label">
+                            Name of Location<br />
+                            <span class="small">
+                              123 Address St.<br />
+                              City, ST 55555
+                            <span>
+                          </div>
+                        </div><!-- .checkbox-row -->
+                      </div>
+                    </div><!-- .row -->
+
+                    <div class="row">
+                      <div class="col-4">
+                        <label>Session Type</label>
+                      </div>
+                      <div class="col-8">
+                        <a href="#" class="edit-field"></a>
+                        <div class="checkbox-row">
+                          <div class="checkbox-wrap">
+                            <input class="checkbox" type="checkbox" name="session-type[]" value="One-on-one" checked="checked" />
+                          </div>
+                          <div class="checkbox-label">
+                            One-on-One
+                          </div>
+                        </div><!-- .checkbox-row -->
+                        <div class="checkbox-row">
+                          <div class="checkbox-wrap">
+                            <input class="checkbox" type="checkbox" name="session-type[]" value="Small Group" checked="checked" />
+                          </div>
+                          <div class="checkbox-label">
+                            Small Group<br />
+                            <span class="small">2–4 Athletes<span>
+                          </div>
+                        </div><!-- .checkbox-row -->
+                        <div class="checkbox-row">
+                          <div class="checkbox-wrap">
+                            <input class="checkbox" type="checkbox" name="session-type[]" value="Large Group" checked="checked" />
+                          </div>
+                          <div class="checkbox-label">
+                            Large Group<br />
+                            <span class="small">
+                              5–20 Athletes
+                            <span>
+                          </div>
+                        </div><!-- .checkbox-row -->
+                      </div>
+                    </div><!-- .row -->
+
+                    <input type="submit" class="button-full" value="Create Availability" />
+                  </form>
+                </div><!-- #details -->
+
+                <div id="notes">
+
+                  <div class="note-editor">
+                      <div class="note-thread-wrap">
+                        <div class="note-thread">
+                          <div class="note">
+                            <div class="avatar">KH</div>
+                            <div class="note-entry">
+                              <div class="byline">
+                                <span class="name">Kevin Hall</span>
+                                <span class="timestamp"><a href="#">Share note</a></span>
+                              </div>
+                              <div class="note-content">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <br /><br />
+                                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                              </div>
+                            </div>
+                          </div><!-- .note -->
+                          <div class="note">
+                            <div class="avatar other">JS</div>
+                            <div class="note-entry">
+                              <div class="byline">
+                                <span class="name">John Smith</span>
+                                <span class="timestamp">Shared note</span>
+                              </div>
+                              <div class="note-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam magna.</div>
+                            </div>
+                          </div><!-- .note -->
+                        </div><!-- .note-thread -->
+
+                        <div class="new-note">
+                          <div class="avatar">KH</div>
+                          <input type="text" placeholder="Create new note..." />
+                        </div><!-- .new-note -->
+                        <div class="attach-file"><a href="#">Attach a file</a></div>
+
+                      </div>
+                  </div><!-- .note-editor -->
+
+                </div><!-- #notes -->
+
+              </div><!-- #panel-content -->
+
+            </div><!-- #tabs -->
+
+          </div><!-- .event-modal -->
+
+        </div><!-- .modal-content -->
+
+    </div><!-- #modal -->
+
+    <div id="modal-2" class="modal-overlay">
+        <div class="modal-content">
+          <div class="event-modal">
+            <a class="close-modal" href="#"></a>
+
+              <div class="note-editor">
+
+                <h4 class="centered">Notes</h4>
+
+                <div class="note-thread-wrap">
+                  <div class="note-thread">
+                    <div class="note">
+                      <div class="avatar">KH</div>
+                      <div class="note-entry">
+                        <div class="byline">
+                          <span class="name">Kevin Hall</span>
+                          <span class="timestamp"><a href="#">Share note</a></span>
+                        </div>
+                        <div class="note-content">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <br /><br />
+                          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                    </div><!-- .note -->
+                  </div><!-- .note-thread -->
+
+                  <div class="new-note">
+                    <div class="avatar">KH</div>
+                    <input type="text" placeholder="Create new note..." />
+                  </div><!-- .new-note -->
+                  <div class="attach-file"><a href="#">Attach a file</a></div>
+
+                </div><!-- .note-thread-wrap -->
+            </div><!-- .note-editor -->
+
+          </div><!-- .event-modal -->
+        </div><!-- .modal-content -->
+    </div><!-- #modal-2 -->
+
+
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+  </body>
+</html>
